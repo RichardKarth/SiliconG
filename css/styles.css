@@ -3,6 +3,7 @@
 *, *::before, *::after{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 :root{
     --text-clr-body: #565973;
@@ -29,6 +30,8 @@ html, body{
 a{
     color: var(--link-color);
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 
     &:hover{
        text-decoration: underline;
@@ -64,11 +67,9 @@ button, .btn{
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
-    padding-right: 1rem ;
-
+    padding-right: 1rem;
 }
 header{
-
     padding-top: 1rem;
 
     .header-area{
@@ -82,8 +83,6 @@ header{
     
         }
     }
-
-
 }
 .hero{
 
@@ -133,6 +132,26 @@ img{
          width: 180px;
         height: 52px;
     }
-    
 }
 
+.brands{
+    margin-top: 5rem;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+   ul{
+    list-style: none;
+    }
+    
+}
+.logo-list{
+      
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+      img {
+        width: 190px;
+        height: 100px;
+    }
+   
+}
