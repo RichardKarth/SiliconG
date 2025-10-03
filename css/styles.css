@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+:root{
+    --text-clr-body: #565973;
+    --text-clr-heading: #0B0F19;
+    
+    --background-clr: #ffffff;
+
+    --btn-clr-background: #6366F1;
+    --btn-clr-background-hover: #6566a8;
+    --btn-clr-text: #ffffff;
+}
+
+
+html, body{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    color: var(--text-clr-body);
+    background-color: var(--background-clr);
+    font-family: "Manrope", sans-serif;;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+
+}
+a{
+    color: var(--link-color);
+    text-decoration: none;
+
+    &:hover{
+       text-decoration: underline;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--text-clr-heading);
+}
+
+button, .btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+
+
+
+    color: var(--btn-clr-text);
+    background-color: var(--btn-clr-background);
+    padding: 9px 20px 9px 20px;
+    border-radius: 5px;
+    transition: background 0.2s ease-in-out;
+
+
+    &:hover{
+        text-decoration: none;
+        background-color: var(--btn-clr-background-hover);
+    }
+}
+.container{
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem ;
+
+}
+
+
+header{
+
+    padding-top: 1rem;
+
+    .header-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        .actions{
+            display: flex;
+            gap: 2rem;
+    
+        }
+    }
+
+
+}
+
+
