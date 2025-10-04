@@ -8,13 +8,18 @@
 :root{
     --text-clr-body: #565973;
     --text-clr-heading: #0B0F19;
+    --text-clr-form: #D4D7E5;
     
     --background-clr: #ffffff;
     --backgrodund-clr-hdiw: #F3F6FF;
 
     --btn-clr-background: #6366F1;
-    --btn-clr-background-hover: #6566a8;
+    --btn-clr-background-hover: #3f406d;
     --btn-clr-text: #ffffff;
+
+    --border-clr: #B4B7C9;
+    --border-clr-focus: #6f7079;
+    
 }
 html, body{
     scroll-behavior: smooth;
@@ -117,8 +122,7 @@ header{
            }
            .hero-ingress{
                 font-size: 18px;
-                font-weight: 400;
-                
+                font-weight: 400;        
            }
         }
     }
@@ -256,5 +260,83 @@ img{
     }
     
 }
+.subscribe{
 
-   
+    .subscribe-area{
+
+        background-color: var(--backgrodund-clr-hdiw);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5rem;
+        padding: 5rem;
+        align-items: center;
+    
+        .subscribe-text{
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            img{
+                height: 78px;
+                width: auto;
+                margin: 1rem;
+            }
+
+        }
+        .subscribe-form{
+
+            form{
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                left: 40px;
+            }
+            .mail-alignment{
+                color: var(--border-clr);
+                font-size: 2rem;
+                position: absolute;
+                left: -40px;
+                bottom: 11px;
+                
+            }
+            #subscribe-input{
+                border: 1px solid var(--border-clr);
+                border-radius: 5px 0px 0px 5px;
+                padding: 1.1rem;
+                flex: 1 ;
+                width: 330px;
+                color: var(--text-clr-form);
+
+                &:focus{
+                    outline: 0;
+                    border-color: var(--border-clr-focus) ;
+                }
+                
+            }
+            .subscribe-btn{
+                
+                color: var(--btn-clr-text);
+                background-color: var(--btn-clr-background);
+                padding: 9px 20px 9px 20px;
+                border-radius: 0px 5px 5px 0px;
+                width: 142px;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0 5px 5px 0;
+                height: 52px;
+                background-color: var(--btn-clr-background);
+                color: var(--btn-clr-text);
+                
+                transition: background 0.2s ease-in-out;
+                text-decoration: none;
+                &:hover{
+                    
+                    background-color: var(--btn-clr-background-hover);
+                }
+            }
+        }
+    }
+}
