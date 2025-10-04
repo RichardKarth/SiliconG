@@ -19,6 +19,9 @@
 
     --border-clr: #B4B7C9;
     --border-clr-focus: #6f7079;
+
+    --footer-text-clr: #9397AD;
+   
     
 }
 html, body{
@@ -304,24 +307,25 @@ img{
                 border: 1px solid var(--border-clr);
                 border-radius: 5px 0px 0px 5px;
                 padding: 1.1rem;
-                flex: 1 ;
+                flex: 1;
                 width: 330px;
-                color: var(--text-clr-form);
-
+                color: var(--text-clr-body);
                 &:focus{
                     outline: 0;
-                    border-color: var(--border-clr-focus) ;
+                    border-color: var(--border-clr-focus);
+
                 }
-                
+                &::placeholder{
+                    color: var(--text-clr-form);
+                    opacity: 1;
+                }
             }
             .subscribe-btn{
-                
                 color: var(--btn-clr-text);
                 background-color: var(--btn-clr-background);
                 padding: 9px 20px 9px 20px;
                 border-radius: 0px 5px 5px 0px;
                 width: 142px;
-                
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -329,14 +333,21 @@ img{
                 height: 52px;
                 background-color: var(--btn-clr-background);
                 color: var(--btn-clr-text);
-                
                 transition: background 0.2s ease-in-out;
                 text-decoration: none;
                 &:hover{
-                    
                     background-color: var(--btn-clr-background-hover);
                 }
             }
         }
+    }
+}
+.silicon-footer{
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0rem;
+    .rights-footer{
+        font-size: 14px;
+        color: var(--footer-text-clr);
     }
 }
