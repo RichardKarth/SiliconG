@@ -10,6 +10,7 @@
     --text-clr-heading: #0B0F19;
     
     --background-clr: #ffffff;
+    --backgrodund-clr-hdiw: #F3F6FF;
 
     --btn-clr-background: #6366F1;
     --btn-clr-background-hover: #6566a8;
@@ -39,6 +40,7 @@ a{
 }
 h1,h2,h3,h4,h5,h6{
     color: var(--text-clr-heading);
+    font-weight: 800;
 }
 button, .btn{
 
@@ -218,3 +220,41 @@ img{
         }
     }
 }
+
+
+.how-does-it-work-area{
+    padding-bottom: 5.5rem;
+}
+.how-does-it-work{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin-top: 5.2rem;
+    
+    background-color: var(--backgrodund-clr-hdiw);
+    
+    .hdiw-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        margin-top: 2rem;
+    }
+    .latest-transaction-history{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 630px;
+        text-align: center;
+        margin: 0 auto;
+        
+
+        h4{
+            padding: 2rem;
+            font-size: 24px;
+        }
+    }
+    
+}
+
+   
